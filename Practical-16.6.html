@@ -1,0 +1,18 @@
+<html>
+<head><title>Practical 16.6</title></head>
+<body>
+    <script>
+        function f() {
+            var a = parseInt(document.getElementById("b").value);
+            let c=0,d=1,next_number;
+            for(let i=0;i<a;i++){
+                document.write("<br>"+c);
+                next_number = c + d;
+                d = next_number;
+            }
+        }
+    </script>
+    <p>Enter the Number: <input id="b"></p>
+    <button onclick="f()">Submit</button>
+</body>
+</html>
